@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+
+      <div class="card">
+        <div class="card-body">
+
+          <h3>Lista de carros</h3>
+
+          <div class="btn-new">
+            <button type="button" class="btn btn-secondary" mdbRipple (click)="new()">Novo</button>
+            <!-- <button type="button" class="btn btn-secondary" mdbRipple routerLink="/admin/carros/new">Novo</button> -->
+          </div>
+          <br>
+
+          <table border="1" class="table table-striped">
+            <thead>
+              <tr>
+                <td>#</td>
+                <td>Nome</td>
+                <td>Marca</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              @for (carro of lista; track $index) {
+                <tr>
+                  <td>{{carro.id}}</td>
+                  <td>{{carro.nome}}</td>
+                  @if(carro.marca) {
+                    <td>{{carro.marca.nome}}</td>
+                  }@else{
+                    <td>---</td>
+                  }
+                  <td class="btn-actions">
+                    <button type="button" class="btn btn-secondary" mdbRipple (click)="edit(carro)">Editar</button>
+                    <button type="button" class="btn btn-danger btn-delete" mdbRipple (click)="deleteById(carro)">Deletar</button>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<ng-template #modalCarroDetalhe>
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Cadastrar novo carro</h5>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modalRef.close()">
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-carrosdetails [carro]="carroEdit" (return)="returnDetails($event)"></app-carrosdetails>
+  </div>
+<ng-template/>

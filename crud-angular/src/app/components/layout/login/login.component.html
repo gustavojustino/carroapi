@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4 center top">
+      <div class="card">
+        <h5 class="card-header">Autenticação</h5>
+        <div class="card-body">
+          <mdb-form-control>
+            <input mdbInput type="text" id="usuario" class="form-control" [(ngModel)]="login.username" required/>
+            <label mdbLabel class="form-label" for="usuario">Usuário</label>
+          </mdb-form-control>
+
+          <br>
+
+          <mdb-form-control>
+            <input mdbInput type="password" id="senha" class="form-control" [(ngModel)]="login.password" required (keydown.enter)="logar()"/>
+            <label mdbLabel class="form-label" for="senha">Senha</label>
+          </mdb-form-control>
+
+          <br>
+
+          <button type="button" class="btn btn-primary" mdbRipple>Cadastrar</button>
+          <button type="button" class="btn btn-secondary" mdbRipple (click)="logar()">Login</button>
+
+          <br>
+          <br>
+          <a class="btn text-white" style="background-color: #3b5998;" href="#!" role="button" mdbRipple>
+            <i class="fab fa-facebook-f"></i>
+            <span class="login google"> Acessar com Facebook</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4"></div>
+  </div>
+</div>
