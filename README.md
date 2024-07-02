@@ -1,5 +1,5 @@
 # CarroAPI 
-> <p align="center">Este é o projeto CarroAPI, uma API Restful para gerenciamento de carros e marcas. Este projeto foi construído usando Java (SpringBoot), Typescript (Angular) e utiliza MySQL como banco de dados.</p>
+> <p align="center">Este é o projeto CarroAPI, uma API Restful para gerenciamento de carros e marcas. Este projeto foi construído usando Java (SpringBoot), Typescript (Angular) e utiliza MySQL como banco de dados. As autenticações e autorizações são gerenciadas pelo Spring Security com token JWT</p>
 ![Crud básico utilizando Java spring boot e Angular 17](https://i.ibb.co/55dCbym/Captura-de-tela-2024-07-01-174327.png)
 
 ## Tecnologias Utilizadas
@@ -10,6 +10,7 @@
 - Spring Security
 - MySQL
 - Docker
+- JWT
 
  #### Frontend
 - TypeScript
