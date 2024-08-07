@@ -119,7 +119,7 @@ Você pode me encontrar nas redes sociais:
 
 - [LinkedIn](https://www.linkedin.com/in/luis-gustavorj/)
 - [GitHub](https://github.com/gustavojustino)
-- [Email](gustavodasilvajustino98@gmail.com)
+- [Email](mailto:gustavodasilvajustino98@gmail.com)
 
 ## 📝 Licença
 Este projeto está licenciado sob a MIT License.
