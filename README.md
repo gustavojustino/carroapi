@@ -1,9 +1,9 @@
-## ![MIT LICENSE](https://img.shields.io/github/license/gustavojustino/carroapi)
+ ![MIT LICENSE](https://img.shields.io/github/license/gustavojustino/carroapi)
 # CarroAPI 
 > <p align="center">Este é o projeto CarroAPI, uma API Restful para gerenciamento de carros e marcas. Este projeto foi construído usando Java (SpringBoot), Typescript (Angular) e utiliza MySQL como banco de dados. As autenticações e autorizações são gerenciadas pelo Spring Security com token JWT</p>
 ![Crud básico utilizando Java spring boot e Angular 17](https://i.ibb.co/55dCbym/Captura-de-tela-2024-07-01-174327.png)
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 ### Backend
 - Java 17
 - Spring Boot
@@ -18,35 +18,41 @@
 - Angular 17
 - Bootstrap
 - Angular Material
+
+
+## 🔧 Instalação e execução
+Siga os passos abaixo para instalar e executar o projeto localmente:
+
+Pré-requisitos
+- [Node.js](https://nodejs.org/) (versão 12 ou superior)
+- [Angular CLI](https://angular.dev/) (versão 12 ou superior)
+- [JDK](https://www.oracle.com/br/java/technologies/downloads/) (JDK 14 ou superior)
+- [Docker](https://www.docker.com/) (Docker)
+
+  ## Passo a Passo
   
-## Requisitos
-
-- JDK 14 ou superior
-- Docker
-
-## Instalação
 ### 1. Clonar o repositório
- - 1.1:  Caminhe para o diretório raíz desejável e clone o reposositório
+  1.1  Caminhe para o diretório raíz desejável e clone o reposositório
 ```bash
 
 git clone git@github.com:gustavojustino/carroapi.git
 
 ```
 
-- 1.2: Vá para o diretório do projeto
+ 1.2 Vá para o diretório do projeto
 ```bash
 cd <diretorio_do_projeto>
 ```
 
 ## Inicializar backend
 ### 2. Crie o arquivo .env
-- 2.1: Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
+ 2.1 Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
 ```env
 # Database  Mysql Docker
 MYSQL_DATABASE=crud-carros
 MYSQL_ROOT_PASSWORD=sua_senha_root
 ```
-- 2.2: Vá para o diretório _crud-spring-boot_ e crie um arquivo .env
+ 2.2 Vá para o diretório _crud-spring-boot_ e crie um arquivo .env
 ```env
 # Database MYSQL application.yaml
 DB_URL=jdbc:mysql://localhost:3306/crud-carros
@@ -101,18 +107,21 @@ npm install
 ```
 
 ### 3. Executar o Frontend
-- 3.1 No diretório crud-angular, execute o comando abaixo para iniciar o servidor de desenvolvimento do Angular:
+ 3.1 No diretório crud-angular, execute o comando abaixo para iniciar o servidor de desenvolvimento do Angular:
 ```bash
 ng serve
 ```
 
 > <p align=center>Acesse (http://localhost:4200) em seu navegador para ver o frontend em ação.</p>
 
-> [!TIP]
-> Por padrão, ao inicializar o backend é gerado o script data.sql que contém a inserção de 2 perfis: <br>
-> login -> admin:admin <br>
-> login -> user:user
+## 📞 Contato
+Você pode me encontrar nas redes sociais:
 
+- [LinkedIn](https://www.linkedin.com/in/luis-gustavorj/)
+- [GitHub](https://github.com/gustavojustino)
+- [Email](gustavodasilvajustino98@gmail.com)
 
-> [!NOTE]
-> Projeto em desenvolvimento...
+## 📝 Licença
+Este projeto está licenciado sob a MIT License.
+<hr>
+<p align="center">Obrigado por visitar meu portfólio! Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.</p>
